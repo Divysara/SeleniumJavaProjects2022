@@ -19,6 +19,7 @@ public class FindLinks {
 		List<WebElement> list = driver.findElements(By.tagName("a"));
 		System.out.println("the no of links: "+ list.size());
 		List<WebElement> inputtext = driver.findElements(By.tagName("input"));
+		System.out.println(inputtext);
 
 		for(int i =0;i<list.size();i++) {
 			System.out.println(list.get(i).getText());
@@ -26,6 +27,7 @@ public class FindLinks {
 		for(WebElement txt : list) {
 			System.out.println(txt.getText());
 		}
+		
 		driver.close();
 
 	}
